@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Products />
+      <Products products={DUMMY_PRODUCTS}/>
     </div>
   );
 }
