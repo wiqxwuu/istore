@@ -1,13 +1,10 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import ProductCart from '../components/ProductCart'
 
-export const Products = ({products = []}) => {
+export const MyCart = () => {
   return (
     <Container>
-      {products.map((cart)=>{
-        return <ProductCart key={cart.id} cart={cart} />
-      })}
+      <div>My Cart</div>
     </Container>
   )
 }
@@ -20,4 +17,9 @@ const Container = styled('div')`
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+`
+
+const CartPage = styled('div')`
+    background-color: white;
+    width: 80%;
 `

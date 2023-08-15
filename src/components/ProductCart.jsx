@@ -5,22 +5,24 @@ const ProductCart = ({ cart }) => {
   return (
     <Cart>
       <img src={cart.image} alt="" />
-      <h1>{cart.title}</h1>
-      <h3>${cart.price}</h3>
+      <h3>{cart.title}</h3>
+      <h4>${cart.price}</h4>
     </Cart>
   )
 }
 
 const Cart = styled('div')`
   box-sizing: border-box;
-  width: 25%;
-  height: 500px;
   padding: 20px;
   overflow: hidden;
+  background-color: white;
   border-radius: 12px;
+  width: 30%;
+  height: 550px;
+  margin: 20px;
   &>img{
-    width: 100px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
   }
 `
 export default ProductCart

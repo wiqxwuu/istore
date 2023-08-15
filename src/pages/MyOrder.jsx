@@ -1,13 +1,10 @@
 import React from 'react'
 import { styled } from 'styled-components'
-import ProductCart from '../components/ProductCart'
 
-export const Products = ({products = []}) => {
+export const MyOrder = () => {
   return (
     <Container>
-      {products.map((cart)=>{
-        return <ProductCart key={cart.id} cart={cart} />
-      })}
+      
     </Container>
   )
 }
