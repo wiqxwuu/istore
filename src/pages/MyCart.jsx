@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components'
+import Button from '../components/Button'
 
 export const MyCart = () => {
   return (
@@ -7,6 +8,7 @@ export const MyCart = () => {
       <CartPage>
         <h1>My Cart Page</h1>
       </CartPage>
+      <Button />
     </Container>
   )
 }

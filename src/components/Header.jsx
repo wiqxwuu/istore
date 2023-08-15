@@ -4,6 +4,7 @@ import { Route, Routes, NavLink } from 'react-router-dom'
 import { Products } from '../pages/Products'
 import { MyCart } from '../pages/MyCart'
 import { MyOrder } from '../pages/MyOrder'
+import { MainPage } from '../pages/MainPage'
 
 export const DUMMY_PRODUCTS = [
   {
@@ -69,9 +70,7 @@ const Header = () => {
       </nav>
     </StyledHeader>
     <Routes>
-      <Route path='/' element={
-        <div style={{boxSizing: 'border-sizing' ,backgroundColor: '#dfdfdf', width: '100%'}}></div>
-      }/>
+      <Route path='/' element={<MainPage />}/>
       <Route path="/products" element={<Products products={DUMMY_PRODUCTS}/>}/>
       <Route path='/carts' element={<MyCart />}/>
       <Route path='/orders' element={<MyOrder />}/>
@@ -83,7 +82,7 @@ const Header = () => {
 const StyledHeader = styled('header')`
     box-sizing: border-box;
     width: 100%;
-    background-color: #7fe1ff;
+    background-color: #02008d;
     height: 100px;
     padding: 20px;
     display: flex;
