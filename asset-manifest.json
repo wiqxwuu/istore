@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/istore/static/css/main.a7a9531c.css",
+    "main.js": "/istore/static/js/main.d6d697a4.js",
+    "index.html": "/istore/index.html",
+    "main.a7a9531c.css.map": "/istore/static/css/main.a7a9531c.css.map",
+    "main.d6d697a4.js.map": "/istore/static/js/main.d6d697a4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7a9531c.css",
+    "static/js/main.d6d697a4.js"
+  ]
+}
