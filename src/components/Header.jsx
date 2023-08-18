@@ -5,6 +5,7 @@ import { Products } from '../pages/Products'
 import { MyCart } from '../pages/MyCart'
 import { MyOrder } from '../pages/MyOrder'
 import { MainPage } from '../pages/MainPage'
+import { ProductDetails } from '../pages/ProductDetails'
 
 export const DUMMY_PRODUCTS = [
   {
@@ -12,18 +13,21 @@ export const DUMMY_PRODUCTS = [
       price: 97700,
       id: 'e1ndaskxe',
       image: 'https://softech.kg/image/cache/296b69d253ff893ad55b7fabf3e031ed.jpg',
+      info: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia laborum, earum dolore architecto nam laudantium exercitationem sit quasi. Inventore voluptatem est nihil praesentium, ipsum ex iusto sed itaque cum.'
   },
   {
       title: 'Смартфон Apple iPhone 13 256GB KH',
       price: 60700,
       id: 'e242kjkx',
       image: 'https://softech.kg/image/cache/a282da674bcc4003cfe99133ac1d52fd.jpg',
+      info: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia laborum, earum dolore architecto nam laudantium exercitationem sit quasi. Inventore voluptatem est nihil praesentium, ipsum ex iusto sed itaque cum.'
   },
   {
       title: 'Смартфон Apple iPhone 14 Pro Max 1TB JP',
       price: 107700,
       id: 'e3fpso1m',
       image: 'https://softech.kg/image/cache/d871f069c929794a42d44fbe69c4c151.jpg',
+      info: '        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officia laborum, earum dolore architecto nam laudantium exercitationem sit quasi. Inventore voluptatem est nihil praesentium, ipsum ex iusto sed itaque cum.'
   },
 ]
 
@@ -72,6 +76,7 @@ const Header = () => {
     <Routes>
       <Route path='/' element={<MainPage />}/>
       <Route path="/products" element={<Products products={DUMMY_PRODUCTS}/>}/>
+      <Route path='/products/:productId' element={<ProductDetails/>}></Route>
       <Route path='/carts' element={<MyCart />}/>
       <Route path='/orders' element={<MyOrder />}/>
     </Routes>
@@ -95,6 +100,7 @@ const StyledHeader = styled('header')`
         color: white;
         font-weight: 700;
         display: flex;
+        gap: 10rem;
         align-items: center;
         justify-content: space-around;
         font-size: 20px;
@@ -105,7 +111,6 @@ const StyledHeader = styled('header')`
 const Link = styled(NavLink)`
   text-decoration: none;
   color:  white;
-  margin-left: 100px;
 `
 
 export default Header
